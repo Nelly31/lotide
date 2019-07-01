@@ -1,4 +1,6 @@
 
+const assertEqual = require('./assertEqual');
+
 let eqArrays = function(firstArray,secondArray) {
   let truthfulness = true;
   // looping through the first array
