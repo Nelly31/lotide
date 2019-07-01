@@ -1,11 +1,5 @@
-//checking if output is the same as expected output
-const assertEqual = function(actual,expected) {
-  if (actual === expected) {
-    console.log(`👍👍👍 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😡😡😡 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+
+const assertEqual = require('./assertEqual');
 
 //counting all the letters in a word
 const countLetters = function(input) {
@@ -25,19 +19,5 @@ const countLetters = function(input) {
     }
   } return result;
 };
-
-// //logging the count function with various inputs
-// console.log(countLetters("Nelly"));
-// console.log(countLetters("This is a string"));
-// console.log(countLetters("abcABC"));
-
-// //testing the output is as expected for Nelly
-// let objResult = countLetters("nelly");
-
-// assertEqual(objResult['n'],1);
-// assertEqual(objResult['e'],1);
-// assertEqual(objResult['l'],2);
-
-// assertEqual(countLetters("nelly").n,1);
 
 module.exports = countLetters;
