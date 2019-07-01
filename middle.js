@@ -14,6 +14,4 @@ const middle = function(anArray) {
   } return middleVal;
 };
 
-
-
 module.exports = middle;

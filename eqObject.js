@@ -8,7 +8,7 @@
 
 //homemade function to check that 2 objects are the same
 
-let eqObjects = function(firstObject,secondObject) {
+let eqObject = function(firstObject,secondObject) {
   let truthfulness = true;
 
   for (let i = 0; i < Object.keys(firstObject).length; i++) {
@@ -28,14 +28,16 @@ let eqObjects = function(firstObject,secondObject) {
   } return truthfulness;
 };
 
+module.exports = eqObject;
+
 // let ab = {a:1, b:2};
 // let ba = {a:1, b:2};
 // console.log(eqObjects(ab,ba));
 
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(cd, dc));
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// console.log(eqObjects(cd, dc));
 
-const cd2 = { c: "1", d: ["2", 3] };
-console.log(eqObjects(cd, cd2));
+// const cd2 = { c: "1", d: ["2", 3] };
+// console.log(eqObjects(cd, cd2));
