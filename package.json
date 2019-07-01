@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@nelly31/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "tests"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Nelly31/lotide.git"
   },
-  "author": "",
+  "author": "Nelly Main <nelly_main@hotmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Nelly31/lotide/issues"
