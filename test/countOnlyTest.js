@@ -1,7 +1,6 @@
 const countOnly = require('../countOnly');
 const assertEqual = require('../assertEqual');
 
-
 const firstNames = [
   "Karl",
   "Salima",
@@ -14,7 +13,7 @@ const firstNames = [
   "Joe"
 ];
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
+let result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
 
 assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);

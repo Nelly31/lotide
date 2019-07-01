@@ -1,18 +1,14 @@
-
-const assertEqual = require('./assertEqual');
+//checks that the length of 2 arrays are the same.
 
 let eqArrays = function(firstArray,secondArray) {
   let truthfulness = true;
-  // looping through the first array
   for (let i = 0; i < firstArray.length; i++) {
-  //looping second array
-    for (let j = 0; j < secondArray.length; j++) {
-      if (secondArray[i] !== firstArray[i]) {
-        truthfulness = false;
-        break;
-      }
+    if (secondArray[i] !== firstArray[i]) {
+      truthfulness = false;
+      break;
     }
   } return truthfulness;
 };
+
 
 module.exports = eqArrays;

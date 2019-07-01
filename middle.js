@@ -1,7 +1,7 @@
-// // Function to test the truthfulness of whether 2 array are the same and printing to the console.
 
 const assertArraysEqual = require('./assertArraysEqual.js');
 
+//returns the middle element of an array if the array length is even, returns the middle 2 elements if the array length is odd.
 
 const middle = function(anArray) {
   let middleVal = [];

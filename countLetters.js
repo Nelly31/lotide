@@ -10,9 +10,10 @@ const countLetters = function(input) {
   for (const letter of stringInput) {
     //not counting the space
     if (letter !== " ") {
-      //if the letter key hasn't already been defined
+      //if the letter key has already been defined
       if (result[letter]) {
         result[letter] += 1;
+      //if the letter key hasn't already been defined
       } else {
         result[letter] = 1;
       }

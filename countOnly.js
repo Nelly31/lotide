@@ -1,5 +1,6 @@
 const assertEqual = require('./assertEqual');
 
+// function to count the number of times given elements appears in an array and return an object with the element as the key and the count as the value
 const countOnly = function(allItems,itemsToCount) {
   const results = {};
   

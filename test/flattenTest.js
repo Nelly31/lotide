@@ -1,7 +1,17 @@
 const flatten = require('../flatten');
-const assertArraysEqual = require('../assertArraysEqual');
+const assert = require('chai').assert;
 
+describe('#flatten', () => {
+  it('returns a single array when passed a single array', () => {
+    assert.deepEqual(flatten([1,2,3]), [1,2,3]);
+  });
 
-console.log(flatten([[1,2],[],[3,[4]],5,6]));
+  it('returns a single array when passed an array with 2 arrays', () => {
+    assert.deepEqual(flatten([[1,2],[3]]), [1,2,3]);
+  });
 
-assertArraysEqual(flatten([[1,2],[3,[4]],5,6]),[1,2,3,4,5,6]);
+  it('returns an empty array when passed an array with empty arrays', () => {
+    assert.deepEqual(flatten([[],[],[[]]]), []);
+  });
+
+});
